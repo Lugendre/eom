@@ -18,20 +18,20 @@ oss       = ["ndarray-linalg/openblas-static", "fftw/source"]
 intel-mkl = ["ndarray-linalg/intel-mkl-static", "fftw/intel-mkl"]
 
 [dependencies]
-num-traits  = { version = "0.2.15", default-features = false }
-num-complex = { version = "0.4.3", default-features = false }
-derive-new  = { version = "0.5.9", default-features = false }
-ndarray     = { version = "0.15.6", default-features = false }
+num-traits  = { version = "0.2.19", default-features = false }
+num-complex = { version = "0.4.6", default-features = false }
+derive-new  = { version = "0.7.0", default-features = false }
+ndarray     = { version = "0.16.1", default-features = false }
 fftw        = { version = "0.8.0", default-features = false }
 
 katexit = "0.1.4"
 
 [dependencies.ndarray-linalg]
-version = "0.16.0"
+git = "https://github.com/Lugendre/ndarray-linalg.git"
 default-features = false
 
 [dev-dependencies]
-criterion = "0.4.0"
+criterion = "0.5.1"
 
 [[bench]]
 name = "ode"
